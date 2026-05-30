@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Agapora Global Solutions</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:
+    linear-gradient(135deg,#6a11cb,#2575fc);
+    overflow-x:hidden;
+    color:white;
+}
+
+/* Background Blur Circles */
+.bg-circle{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(80px);
+    z-index:-1;
+}
+
+.circle1{
+    width:300px;
+    height:300px;
+    background:#00d4ff;
+    top:-50px;
+    left:-80px;
+}
+
+.circle2{
+    width:350px;
+    height:350px;
+    background:#ff00d4;
+    bottom:-80px;
+    right:-100px;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 8%;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+}
+
+/* Hero */
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
+
+.glass-card{
+    width:90%;
+    max-width:1100px;
+    background:rgba(255,255,255,0.12);
+    border:1px solid rgba(255,255,255,0.2);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border-radius:30px;
+    padding:50px;
+    box-shadow:0 8px 32px rgba(0,0,0,0.2);
+}
+
+.hero h1{
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    line-height:1.8;
+    color:#e8ecff;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:rgba(255,255,255,0.2);
+    border:1px solid rgba(255,255,255,0.3);
+    padding:15px 30px;
+    border-radius:50px;
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:rgba(255,255,255,0.3);
+}
+
+/* Sections */
+.section{
+    padding:70px 8%;
+}
+
+.title{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:40px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.service-card{
+    background:rgba(255,255,255,0.12);
+    border:1px solid rgba(255,255,255,0.2);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    padding:30px;
+    transition:0.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+}
+
+.service-card h3{
+    margin-bottom:15px;
+}
+
+/* Contact */
+.contact-card{
+    background:rgba(255,255,255,0.12);
+    border:1px solid rgba(255,255,255,0.2);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    padding:40px;
+}
+
+.contact-card p{
+    margin:12px 0;
+    font-size:18px;
+}
+
+iframe{
+    width:100%;
+    height:350px;
+    border:0;
+    border-radius:20px;
+    margin-top:25px;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:30px;
+    color:#dbeafe;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.glass-card{
+    padding:30px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg-circle circle1"></div>
+<div class="bg-circle circle2"></div>
+
+<!-- Navbar -->
+<nav>
+    <div class="logo">
+        Agapora Global Solutions
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+
+    <div class="glass-card">
+
+        <h1>Transforming Business Through Technology</h1>
+
+        <p>
+            Agapora Global Solutions provides cutting-edge IT Services
+            and Digital Marketing solutions to help businesses grow,
+            scale, and succeed in the digital era.
+        </p>
+
+        <a href="tel:+917373144810" class="btn">
+            Contact Us
+        </a>
+
+    </div>
+
+</section>
+
+<!-- About -->
+<section class="section">
+
+    <h2 class="title">About Us</h2>
+
+    <div class="glass-card">
+        <p style="font-size:18px; line-height:1.8;">
+            Agapora Global Solutions is a forward-thinking technology
+            company specializing in IT services and digital marketing.
+            We help businesses build strong digital presence through
+            software solutions, branding, online marketing,
+            and innovative technology services.
+        </p>
+    </div>
+
+</section>
+
+<!-- Services -->
+<section class="section">
+
+    <h2 class="title">Our Services</h2>
+
+    <div class="grid">
+
+        <div class="service-card">
+            <h3>IT Services</h3>
+            <p>Reliable technology and business IT solutions.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Digital Marketing</h3>
+            <p>SEO, branding, social media and growth marketing.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Web Development</h3>
+            <p>Modern websites and business platforms.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Business Consulting</h3>
+            <p>Helping businesses scale digitally.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Contact -->
+<section class="section">
+
+    <h2 class="title">Contact Us</h2>
+
+    <div class="contact-card">
+
+        <p><strong>Company:</strong> Agapora Global Solutions</p>
+
+        <p>
+        <strong>Address:</strong><br>
+        Plot No. 1, Jawaharlal Nehru Salai,<br>
+        SIDCO Industrial Estate, Guindy,<br>
+        Chennai, Tamil Nadu 600032
+        </p>
+
+        <p><strong>Phone:</strong> +91 73731 44810</p>
+
+        <p><strong>Email:</strong> agaporaglobalsolutions@gmail.com</p>
+
+        <a href="tel:+917373144810" class="btn">
+            Call Now
+        </a>
+
+        <iframe
+    src="https://www.google.com/maps?q=13.0109,80.2120&z=18&output=embed"
+    width="100%"
+    height="350"
+    style="border:0; border-radius:20px;"
+    loading="lazy"
+    allowfullscreen>
+</iframe>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Agapora Global Solutions | All Rights Reserved
+</footer>
+
+</body>
+</html>
